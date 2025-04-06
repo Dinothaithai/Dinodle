@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinodle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="dino-wordle">
+    <h2>🦖 Dinodle🦕</h2>
+    <p id="hint"></p>
+    <div class="input-container">
+      <input id="guessInput" type="text" placeholder="Who That Dinosaurs..." oninput="showSuggestions()" autocomplete="off">
+      <button onclick="checkGuess()">OK</button>
+      <ul id="suggestions"></ul>
+    </div>
+    <div id="history"></div>
+    <div id="result"></div>
+    <button onclick="resetGame()" id="resetBtn">New Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
